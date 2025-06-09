@@ -1,59 +1,25 @@
-# MarkdownViewer
+# Markdown Viewer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+![Markdown Viewer](https://img.shields.io/badge/markdown-viewer-blue?style=flat&logo=markdown)
 
-## Development server
+Un visor simple y ligero para archivos Markdown.  
+Visualiza tus archivos `.md` con formato limpio y rápido directamente en tu navegador o aplicación.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🚀 Características
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Renderizado rápido y eficiente de archivos Markdown.
+- Soporte para todos los elementos básicos de Markdown (títulos, listas, código, imágenes, enlaces, etc.).
+- Diseño limpio y minimalista.
+- Fácil integración en proyectos web o como herramienta independiente.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 💻 Instalación
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Cloná el repositorio:
 
 ```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/ginocarabelli/markdown-viewer.git
+cd markdown-viewer
