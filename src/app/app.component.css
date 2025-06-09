@@ -1,0 +1,267 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.header h1, .header button {
+    margin-inline: 20px;
+}
+
+/* Estilos minimalistas para el contenido markdown */
+::ng-deep .markdown-preview h1 {
+font-size: 2em;
+font-weight: 600;
+margin: 0 0 16px 0;
+padding-bottom: 10px;
+border-bottom: 1px solid #d1d9e0;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview h2 {
+font-size: 1.5em;
+font-weight: 600;
+margin: 24px 0 16px 0;
+padding-bottom: 8px;
+border-bottom: 1px solid #d1d9e0;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview h3 {
+font-size: 1.25em;
+font-weight: 600;
+margin: 24px 0 16px 0;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview h4,
+::ng-deep .markdown-preview h5,
+::ng-deep .markdown-preview h6 {
+font-weight: 600;
+margin: 24px 0 16px 0;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview p {
+margin: 0 0 16px 0;
+}
+
+::ng-deep .markdown-preview code {
+background: #f6f8fa;
+padding: 2px 4px;
+border-radius: 3px;
+font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+font-size: 85%;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview pre {
+background: #f6f8fa;
+border-radius: 6px;
+padding: 16px;
+overflow-x: auto;
+margin: 16px 0;
+border: 1px solid #d1d9e0;
+}
+
+::ng-deep .markdown-preview pre code {
+background: transparent;
+padding: 0;
+border-radius: 0;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview blockquote {
+margin: 0 0 16px 0;
+padding: 0 16px;
+color: #656d76;
+border-left: 4px solid #d1d9e0;
+font-style: normal;
+}
+
+::ng-deep .markdown-preview ul,
+::ng-deep .markdown-preview ol {
+margin: 0 0 16px 0;
+padding-left: 30px;
+}
+
+::ng-deep .markdown-preview li {
+margin: 4px 0;
+}
+
+::ng-deep .markdown-preview table {
+border-collapse: collapse;
+width: 100%;
+margin: 16px 0;
+border: 1px solid #d1d9e0;
+border-radius: 6px;
+overflow: hidden;
+}
+
+::ng-deep .markdown-preview table th,
+::ng-deep .markdown-preview table td {
+border: 1px solid #d1d9e0;
+padding: 8px 12px;
+text-align: left;
+}
+
+::ng-deep .markdown-preview table th {
+background: #f6f8fa;
+font-weight: 600;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview table tr:nth-child(even) {
+background: #f6f8fa;
+}
+
+::ng-deep .markdown-preview a {
+color: #0969da;
+text-decoration: none;
+}
+
+::ng-deep .markdown-preview a:hover {
+text-decoration: underline;
+}
+
+::ng-deep .markdown-preview strong {
+font-weight: 600;
+color: #24292f;
+}
+
+::ng-deep .markdown-preview em {
+font-style: italic;
+}
+
+::ng-deep .markdown-preview hr {
+height: 1px;
+background: #d1d9e0;
+border: none;
+margin: 24px 0;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .editor-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    }
+    
+    .editor-panel, .preview-panel {
+    min-height: 300px;
+    }
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+.editor-container {
+display: flex;
+gap: 30px;
+height: 100vh;
+padding: 20px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+background: #ffffff;
+}
+
+.editor-panel, .preview-panel {
+flex: 1;
+display: flex;
+flex-direction: column;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+border-radius: 20px;
+}
+
+.editor-panel {
+border-right: 1px solid #e1e5e9;
+}
+
+.panel-header {
+background: #fafbfc;
+border-bottom: 1px solid #e1e5e9;
+padding: 12px 16px;
+font-size: 13px;
+font-weight: 500;
+color: #586069;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.panel-header h3 {
+margin: 0;
+font-size: 13px;
+font-weight: 500;
+}
+
+.markdown-textarea {
+flex: 1;
+border: none;
+padding: 20px;
+font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+font-size: 14px;
+line-height: 1.6;
+resize: none;
+outline: none;
+background: #ffffff;
+color: #24292f;
+}
+
+.markdown-textarea::placeholder {
+color: #656d76;
+}
+
+.markdown-preview {
+flex: 1;
+padding: 20px;
+overflow-y: auto;
+line-height: 1.6;
+color: #24292f;
+background: #ffffff;
+}
+/*BUTTON*/
+/* From Uiverse.io by kamehame-ha */ 
+a {
+    text-decoration: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+  gap: 15px;
+  background-color: #181717;
+  outline: 3px #181717 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #181717;
+}
+
+.button:hover svg path {
+  fill: #181717;
+}
